@@ -1,0 +1,26 @@
+body.loading {
+  overflow: hidden;
+  height: 100vh;
+  background: $white;
+}
+
+.loader {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+
+.transition-block {
+  width:3rem;
+  height:2vh;
+  background: $dark;
+}
+
+.transition-block {
+  width:3rem;
+  height:1rem;
+  background: $dark;
+  transform: rotate(180deg);
+}

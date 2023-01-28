@@ -1,0 +1,10 @@
+.App-loading {
+  background: $white;
+}
+
+.App-loaded {
+  margin: 0;
+  background: $dark;
+  height: 100vh;
+  color: $white;
+}
