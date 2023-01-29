@@ -14,7 +14,7 @@ export const Nav = () => {
       delay: 0.6,
     }}>
     <div className="nav-container nav-section">
-      <div className="nav-logo-container nav-section">
+      <div className="nav-logo-container">
         <div className='logo'>
           <a>flexbox</a>
         </div>

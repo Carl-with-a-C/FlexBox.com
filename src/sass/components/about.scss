@@ -1,0 +1,40 @@
+.about-section {
+  margin: 0 15rem 0 15rem;
+  max-width: 100vw;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 8rem;
+  padding-bottom: 10rem;
+}
+
+@media screen and (max-width: 479px){
+  .about-section {
+    margin: 0 2rem 0 2rem;
+  }
+  }
+
+.about-section--hero-img-container {
+  margin-top: -10rem;
+}
+
+.about-section--hero-img {
+  width: 100%;
+}
+
+.about-section--header-container {
+  line-height: 0.85;
+  margin-top: -11rem;
+
+}
+
+.about-section--subheader-container {
+  line-height: 0.85;
+  text-align: right;
+}
+
+.about-section--garden-img {
+  width: 100%;
+}

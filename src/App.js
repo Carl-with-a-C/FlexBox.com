@@ -3,12 +3,12 @@ import "./sass/main.scss";
 import { motion, LayoutGroup, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
-import {Loader} from "./components/Loader"
 
 //components
+import {Loader} from "./components/Loader"
 import {Nav} from "./components/Nav"
 import {Landing} from "./components/Landing"
-
+import {About} from "./components/About"
 
 
 
@@ -30,6 +30,7 @@ function App() {
           <motion.div className="main" key="main">
            <Nav/>
            <Landing/>
+           <About/>
           </motion.div>}
       </AnimatePresence>
       
