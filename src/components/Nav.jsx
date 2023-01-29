@@ -5,11 +5,24 @@ import {motion} from "framer-motion"
 
 export const Nav = () => {
   return (
-    <motion.div className="nav-container nav-section">
-      <motion.div className="nav-logo-container nav-section">
-        <div className='logo'><a>flexbox</a></div>
-        </motion.div>
-
+    <motion.div
+    initial={{ opacity: 0, y: -180 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{
+      ease: "easeInOut",
+      duration: 1,
+      delay: 0.6,
+    }}>
+    <div className="nav-container nav-section">
+      <div className="nav-logo-container nav-section">
+        <div className='logo'>
+          <a>flexbox</a>
+        </div>
+      </div>
+        <div className='hamburger-menu'>
+          <span></span>
+        </div>
+    </div>
       </motion.div>
   )
 }
