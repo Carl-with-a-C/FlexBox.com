@@ -5,6 +5,11 @@ import { useEffect, useState } from "react";
 
 import {Loader} from "./components/Loader"
 
+//components
+import {Nav} from "./components/Nav"
+import {Landing} from "./components/Landing"
+
+
 
 
 function App() {
@@ -21,7 +26,11 @@ function App() {
         {loading? (
           <motion.div key='loader'>
             <Loader setLoading={setLoading} />
-          </motion.div>): <div><h1>WE BUILD INCREDIBLE COMPACT KITCHEN SOLUTIONS</h1></div>}
+          </motion.div>): 
+          <motion.div className="main" key="main">
+           <Nav/>
+           <Landing/>
+          </motion.div>}
       </AnimatePresence>
       
     </div>
