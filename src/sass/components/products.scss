@@ -7,12 +7,13 @@
   align-items: flex-start;
   justify-content: space-around;
   gap: 10rem;
-  padding-bottom: 10rem;
+  padding-bottom: 50rem;
 }
 
 @media screen and (max-width: 479px) {
   .products-section {
     margin: 0 2rem;
+    padding-bottom: 30rem;
   }
 }
 
