@@ -9,6 +9,7 @@ import {Loader} from "./components/Loader"
 import {Nav} from "./components/Nav"
 import {Landing} from "./components/Landing"
 import {About} from "./components/About"
+import {Products} from "./components/Products"
 
 
 
@@ -31,6 +32,7 @@ function App() {
            <Nav/>
            <Landing/>
            <About/>
+           <Products/>
           </motion.div>}
       </AnimatePresence>
       
