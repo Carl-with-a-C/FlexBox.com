@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  gap: 8rem;
+  gap: 10rem;
   padding-bottom: 10rem;
 }
 
@@ -17,17 +17,29 @@
   }
 
 .about-section--hero-img-container {
-  margin-top: -10rem;
+  margin: -10rem 0 10rem 0;
 }
 
 .about-section--hero-img {
   width: 100%;
 }
 
-.about-section--header-container {
-  line-height: 0.85;
-  margin-top: -11rem;
+.about-section--header-top-container{
+  display: block;
+  width: 100%;
+  text-align: left;
+}
 
+.about-section--header-top {
+  font-weight: 200;
+}
+
+.about-section--header-btm-container {
+  margin-top: -8rem;
+  display: block;
+  width: 100%;
+  border-top: $white solid 2px;
+  padding: 2rem;
 }
 
 .about-section--subheader-container {
@@ -35,6 +47,7 @@
   text-align: right;
 }
 
+//look at the container to change the image height!!
 .about-section--garden-img {
   width: 100%;
 }
