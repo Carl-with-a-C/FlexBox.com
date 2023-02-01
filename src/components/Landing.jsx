@@ -1,8 +1,21 @@
-import React from "react";
+import { useRef } from "react";
 
-import { motion, transform } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 export const Landing = () => {
+  const ref = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["end end", "start start"],
+  });
+
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 50,
+    restDelta: 0.001,
+  });
+
   const line1 = "WE BUILD";
   const line2 = "INCREDIBLE";
   const line3 = "COMPACT";
@@ -28,7 +41,7 @@ export const Landing = () => {
   };
 
   return (
-    <motion.div className="landing-section">
+    <motion.div ref={ref} className="landing-section">
       <motion.h1
         className="banner-container"
         variants={sentence}
@@ -72,12 +85,12 @@ export const Landing = () => {
       </motion.h1>
 
       <motion.div
-        initial={{ opacity: 0, y: 60 }}
+        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
           ease: "easeInOut",
-          duration: 0.8,
-          delay: 3,
+          duration: 1.8,
+          delay: 3.2,
         }}
         className="landing-message-container"
       >
@@ -86,7 +99,10 @@ export const Landing = () => {
           kitchen units
         </h4>
       </motion.div>
-      <motion.div className="landing-bottom-line"></motion.div>
+      <motion.div
+        className="landing-bottom-line"
+        style={{ scaleX }}
+      ></motion.div>
     </motion.div>
   );
 };
