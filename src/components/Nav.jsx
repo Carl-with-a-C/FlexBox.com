@@ -1,8 +1,15 @@
-import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 export const Nav = () => {
+  const [menuClicked, setMenuClicked] = useState(false);
+
+  const handleMenuClick = () => {
+    console.log("menu-clicked", menuClicked);
+    setMenuClicked(!menuClicked);
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: -180 }}
@@ -19,9 +26,25 @@ export const Nav = () => {
           <a>flexbox</a>
         </div>
       </div>
-      <div className="hamburger-menu">
+      <motion.div className="hamburger-menu" onClick={handleMenuClick}>
         <span></span>
-      </div>
+      </motion.div>
+      <motion.div
+        className="menu-dropdown-container"
+        id={menuClicked ? "menu-dropdown-container-open" : null}
+      >
+        <motion.ul className="menu-dropdown-content">
+          <li className="menu-dropdown-about">
+            <h1>About</h1>
+          </li>
+          <li className="menu-dropdown-product">
+            <h1>Product</h1>
+          </li>
+          <li className="menu-dropdown-contact">
+            <h1>Contact</h1>
+          </li>
+        </motion.ul>
+      </motion.div>
     </motion.div>
   );
 };
