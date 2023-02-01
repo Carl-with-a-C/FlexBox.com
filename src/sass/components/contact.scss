@@ -11,6 +11,10 @@
     letter-spacing: normal;
   }
   padding: 0 0 20rem 0;
+  a {
+    text-decoration: none;
+    color: $white;
+  }
 }
 
 @media screen and (max-width: 479px) {

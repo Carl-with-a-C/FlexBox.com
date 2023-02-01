@@ -1,12 +1,6 @@
 import { useRef } from "react";
 
-import {
-  motion,
-  useScroll,
-  useSpring,
-  useTransform,
-  MotionValue,
-} from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 export const Landing = () => {
   const lineScrollref = useRef(null);
@@ -22,9 +16,7 @@ export const Landing = () => {
     restDelta: 0.001,
   });
 
-  const useParallax = (value, distance) => {
-    return useTransform(value, [0, 1], [-distance, distance]);
-  };
+  // Landing banner lines
 
   const line1 = "WE BUILD";
   const line2 = "INCREDIBLE";

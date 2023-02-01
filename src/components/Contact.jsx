@@ -13,7 +13,7 @@ export const Contact = () => {
       </div>
       <div className="contact-section--info-container">
         <p>General Enquiries</p>
-        <a>info@flexbox.com</a>
+        <a href="mailto:info@flexbox.com">info@flexbox.com</a>
       </div>
     </motion.div>
   );
