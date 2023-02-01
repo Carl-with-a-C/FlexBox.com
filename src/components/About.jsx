@@ -1,12 +1,23 @@
 import { useRef } from "react";
 
-import { motion } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 export const About = () => {
-  const scrollRef = useRef();
+  const lineScrollRef = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: lineScrollRef,
+    offset: ["start start", "end end"],
+  });
+
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 250,
+    damping: 40,
+    restDelta: 0.005,
+  });
 
   return (
-    <motion.section className="about-section">
+    <motion.section ref={lineScrollRef} className="about-section">
       <motion.div className="about-section--hero-img-container">
         <motion.img
           className="about-section--hero-img"
@@ -89,20 +100,47 @@ export const About = () => {
         </h4>
       </motion.div>
       <div className="about-section--img-container">
-        {/*initial height 0 - animation drops down to full height!!*/}
+        <motion.div
+          className="about-garden-img-line"
+          style={{ scaleX }}
+        ></motion.div>
         <img
           className="about-section--garden-img"
           src={process.env.PUBLIC_URL + `/images/garden-kitchen.jpg`}
           alt="a beach kitchen"
         />
+        <motion.span
+          initial={{
+            opacity: 1,
+            height: "500px",
+          }}
+          whileInView={{
+            opacity: 1,
+            height: "0px",
+          }}
+          viewport={{ once: true, amount: "all" }}
+          transition={{
+            type: "linear",
+            ease: "circOut",
+            duration: 1.2,
+          }}
+        ></motion.span>
       </div>
-      <div className="about-section--content-container">
+      <motion.div
+        className="about-section--content-container"
+        initial={{ opacity: 0, y: 150 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          ease: "circOut",
+          duration: 0.8,
+        }}
+      >
         <h4 className="about-section--post-content">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Id aliquet
           lectus proin nibh nisl condimentum id venenatis a
         </h4>
-      </div>
+      </motion.div>
     </motion.section>
   );
 };

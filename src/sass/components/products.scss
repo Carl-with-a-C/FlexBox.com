@@ -23,6 +23,10 @@
   gap: 2rem;
   width: calc(100vw - 4rem);
   text-align: left;
+  overflow: hidden;
+  span: {
+    width: 100%;
+  }
 }
 
 .products-section-header-container span {

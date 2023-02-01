@@ -1,12 +1,18 @@
 import { useRef } from "react";
 
-import { motion, useScroll, useSpring } from "framer-motion";
+import {
+  motion,
+  useScroll,
+  useSpring,
+  useTransform,
+  MotionValue,
+} from "framer-motion";
 
 export const Landing = () => {
-  const ref = useRef(null);
+  const lineScrollref = useRef(null);
 
   const { scrollYProgress } = useScroll({
-    target: ref,
+    target: lineScrollref,
     offset: ["end end", "start start"],
   });
 
@@ -15,6 +21,10 @@ export const Landing = () => {
     damping: 50,
     restDelta: 0.001,
   });
+
+  const useParallax = (value, distance) => {
+    return useTransform(value, [0, 1], [-distance, distance]);
+  };
 
   const line1 = "WE BUILD";
   const line2 = "INCREDIBLE";
@@ -41,7 +51,7 @@ export const Landing = () => {
   };
 
   return (
-    <motion.div ref={ref} className="landing-section">
+    <motion.div ref={lineScrollref} className="landing-section">
       <motion.h1
         className="banner-container"
         variants={sentence}
@@ -85,7 +95,7 @@ export const Landing = () => {
       </motion.h1>
 
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
           ease: "easeInOut",
