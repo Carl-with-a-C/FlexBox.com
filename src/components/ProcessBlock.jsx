@@ -1,4 +1,4 @@
-import { motion, AnimatePresence, easeOut } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
 export const ProcessBlock = ({ header, imgUrl, blurb }) => {
@@ -12,7 +12,6 @@ export const ProcessBlock = ({ header, imgUrl, blurb }) => {
       x: 0,
       transition: {
         delay: 0.05,
-        // ease: "easeOut",
         staggerChildren: 0.4,
       },
     },
@@ -34,9 +33,8 @@ export const ProcessBlock = ({ header, imgUrl, blurb }) => {
     setIsOpen(!isOpen);
     setIsMounted(true);
   };
-  useEffect(() => {
-    console.log(isOpen);
-  }, [isOpen]);
+
+  useEffect(() => {}, [isOpen]);
 
   return isOpen ? (
     <AnimatePresence>
