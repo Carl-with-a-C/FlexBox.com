@@ -10,7 +10,6 @@
   justify-content: space-between;
   background: $background;
   z-index: 101;
-  transition: ease-in-out transform 0.8s;
 }
 
 .hamburger-menu {
@@ -23,6 +22,31 @@
     width: 6rem;
     height: 1rem;
     background: $white;
+  }
+}
+
+.menu-icon {
+  transition: all 0.8s ease-in-out;
+}
+
+#hamburger-menu-open {
+  span::before {
+    display: block;
+    content: " ";
+    width: 3rem;
+    height: 1rem;
+    background: $white;
+    transform: rotate(45deg) translateY(1rem);
+    transition: all 0.8s ease-in-out;
+  }
+  span::after {
+    display: block;
+    content: " ";
+    width: 3rem;
+    height: 1rem;
+    background: $white;
+    transform: rotate(315deg) translateY(-1.75rem) translateX(1rem);
+    transition: all 0.8s ease-in-out;
   }
 }
 
@@ -41,13 +65,13 @@
   color: $background;
   transform: translateY(-100vh);
   opacity: 0.000001;
-  transition: ease-in-out transform 0.8s;
+  transition: all 0.8s ease-in-out;
 }
 
 #menu-dropdown-container-open {
   transform: translateY(0);
   opacity: 1;
-  transition: ease-in-out transform 0.8s;
+  transition: all 0.8s ease-in-out;
 }
 
 .menu-dropdown-content {
@@ -56,5 +80,22 @@
   justify-content: center;
   align-items: flex-start;
   gap: 4rem;
-  transition: ease-in-out transform 0.8s;
+  transition: all 3s ease-in;
+}
+
+.menu-dropdown-item {
+  overflow: hidden;
+  transition: all 3s ease-in;
+}
+
+.menu-dropdown-item h1 {
+  opacity: 0.000001;
+  transform: translateY(5rem);
+  transition: all 0.3s ease-in;
+}
+
+.menu-dropdown-item-open h1 {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 3s ease-in;
 }

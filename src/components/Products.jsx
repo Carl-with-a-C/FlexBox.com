@@ -26,7 +26,7 @@ export const Products = () => {
   const { buildQuality, features, security } = blocks;
 
   return (
-    <motion.section ref={headerRef} className="products-section">
+    <motion.section ref={headerRef} className="products-section" id="#product">
       <motion.div className="products-section-header-container">
         <motion.h3
           initial={{ y: 45, rotateY: 60 }}
