@@ -26,21 +26,37 @@ export const Nav = () => {
           <a>flexbox</a>
         </div>
       </div>
-      <motion.div className="hamburger-menu" onClick={handleMenuClick}>
-        <span></span>
+      <motion.div
+        className="hamburger-menu"
+        id={menuClicked ? "hamburger-menu-open" : null}
+        onClick={handleMenuClick}
+      >
+        <span className="menu-icon"></span>
       </motion.div>
       <motion.div
         className="menu-dropdown-container"
         id={menuClicked ? "menu-dropdown-container-open" : null}
       >
         <motion.ul className="menu-dropdown-content">
-          <li className="menu-dropdown-about">
+          <li
+            className={
+              menuClicked ? "menu-dropdown-item-open" : "menu-dropdown-item"
+            }
+          >
             <h1>About</h1>
           </li>
-          <li className="menu-dropdown-product">
+          <li
+            className={
+              menuClicked ? "menu-dropdown-item-open" : "menu-dropdown-item"
+            }
+          >
             <h1>Product</h1>
           </li>
-          <li className="menu-dropdown-contact">
+          <li
+            className={
+              menuClicked ? "menu-dropdown-item-open" : "menu-dropdown-item"
+            }
+          >
             <h1>Contact</h1>
           </li>
         </motion.ul>

@@ -17,7 +17,7 @@ export const About = () => {
   });
 
   return (
-    <motion.section ref={lineScrollRef} className="about-section">
+    <motion.section ref={lineScrollRef} className="about-section" id="about">
       <motion.div className="about-section--hero-img-container">
         <motion.img
           className="about-section--hero-img"

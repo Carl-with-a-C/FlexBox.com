@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export const Contact = () => {
   return (
-    <motion.div className="contact-section">
+    <motion.div className="contact-section" id="#contact">
       <div className="contact-section--header-container">
         <motion.h2
           className="contact-section--header"
