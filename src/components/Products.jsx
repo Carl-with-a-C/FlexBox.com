@@ -52,7 +52,7 @@ export const Products = () => {
           viewport={{ once: true }}
         ></motion.span>
       </motion.div>
-      <motion.div variants={dividers} className="process-block-container">
+      <motion.div variants={dividers} className="process-block--container">
         <motion.span
           key={1}
           variants={divider}

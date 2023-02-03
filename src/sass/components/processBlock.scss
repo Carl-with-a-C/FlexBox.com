@@ -2,12 +2,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem;
-  gap: 2rem;
   width: 100%;
+}
+
+.process-block--container-open {
+  padding: 4rem;
+  overflow: hidden;
   background-color: $white;
   color: $background;
-  overflow: hidden;
 }
 
 .process-block--container p {
@@ -19,8 +21,10 @@
 
 .process-block--container-closed {
   padding: 2rem;
-  width: calc(100vw - 4rem);
+  background-color: $background;
+  color: $white;
   overflow: hidden;
+  width: 100%;
 }
 
 .process-block--container-closed:hover {
