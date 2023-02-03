@@ -43,7 +43,7 @@ export const ProcessBlock = ({ header, imgUrl, blurb }) => {
         variants={block}
         initial="hidden"
         animate="visible"
-        className={"process-block--container"}
+        className={"process-block--container-open"}
         onClick={handleClick}
       >
         <motion.h2 className={"process-block--header"}>{`${header}`}</motion.h2>
