@@ -29,8 +29,8 @@ export const Products = () => {
     <motion.section ref={headerRef} className="products-section" id="#product">
       <motion.div className="products-section-header-container">
         <motion.h3
-          initial={{ y: 45, rotateY: 60 }}
-          whileInView={{ y: 0, rotateY: 0 }}
+          initial={{ opacity: 0, y: -60, rotateY: 60 }}
+          whileInView={{ opacity: 1, y: 0, rotateY: 0 }}
           transition={{
             ease: "easeOut",
             duration: 0.6,
