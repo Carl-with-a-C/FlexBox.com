@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -6,9 +6,11 @@ export const Nav = () => {
   const [menuClicked, setMenuClicked] = useState(false);
 
   const handleMenuClick = () => {
-    console.log("menu-clicked", menuClicked);
     setMenuClicked(!menuClicked);
   };
+  console.log("menu-clicked", menuClicked);
+
+  useEffect(() => {}, [menuClicked]);
 
   return (
     <motion.div
@@ -26,6 +28,25 @@ export const Nav = () => {
           <a>flexbox</a>
         </div>
       </div>
+      <motion.div className="nav-link-container">
+        <ul className="nav-links">
+          <li>
+            <a>
+              <p>about</p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <p>product</p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <p>contact</p>
+            </a>
+          </li>
+        </ul>
+      </motion.div>
       <motion.div
         className="hamburger-menu"
         id={menuClicked ? "hamburger-menu-open" : null}
@@ -42,6 +63,7 @@ export const Nav = () => {
             className={
               menuClicked ? "menu-dropdown-item-open" : "menu-dropdown-item"
             }
+            onClick={handleMenuClick}
           >
             <h1>About</h1>
           </li>
@@ -49,6 +71,7 @@ export const Nav = () => {
             className={
               menuClicked ? "menu-dropdown-item-open" : "menu-dropdown-item"
             }
+            onClick={handleMenuClick}
           >
             <h1>Product</h1>
           </li>
@@ -56,6 +79,7 @@ export const Nav = () => {
             className={
               menuClicked ? "menu-dropdown-item-open" : "menu-dropdown-item"
             }
+            onClick={handleMenuClick}
           >
             <h1>Contact</h1>
           </li>

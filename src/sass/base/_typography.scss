@@ -15,7 +15,14 @@
   --fs-p: 3rem;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: $layout-breakpoint-medium) {
+  :root {
+    --fs-xl: 20rem;
+    --fs-sml: 6rem;
+  }
+}
+
+@media screen and (max-width: $layout-breakpoint-small) {
   :root {
     --fs-xl: 14rem;
     --fs-lrg: 10rem;
@@ -25,7 +32,7 @@
   }
 }
 
-@media screen and (max-width: 369px) {
+@media screen and (max-width: $layout-breakpoint-xsmall) {
   :root {
     --fs-lrg: 8rem;
   }
@@ -42,6 +49,7 @@ html {
   h4,
   p {
     font-family: var(--ff-body);
+    letter-spacing: -2px;
   }
 }
 
@@ -64,6 +72,7 @@ h4 {
 
 p {
   font-size: var(--fs-p);
+  letter-spacing: 1px;
 }
 
 a {

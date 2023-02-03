@@ -10,7 +10,19 @@
   padding-bottom: 25rem;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: $layout-breakpoint-large) {
+  .about-section {
+    margin: 0 7.5rem 10rem 7.5rem;
+  }
+}
+
+@media screen and (max-width: $layout-breakpoint-medium) {
+  .about-section {
+    margin: 0 5rem 10rem 5rem;
+  }
+}
+
+@media screen and (max-width: $layout-breakpoint-small) {
   .about-section {
     margin: 0 2rem 10rem 2rem;
   }
