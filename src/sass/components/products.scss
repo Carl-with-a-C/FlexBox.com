@@ -11,10 +11,21 @@
   transition: ease-in duration(0.8);
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: $layout-breakpoint-small) {
   .products-section {
-    margin: 0 2rem;
-    padding-bottom: 30rem;
+    margin: 0 2rem 0 2rem;
+  }
+}
+
+@media screen and (max-width: $layout-breakpoint-medium) {
+  .products-section {
+    margin: 0 5rem 10rem 5rem;
+  }
+}
+
+@media screen and (max-width: $layout-breakpoint-large) {
+  .products-section {
+    margin: 0 7.5rem 10rem 7.5rem;
   }
 }
 

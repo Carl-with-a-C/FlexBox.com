@@ -17,9 +17,21 @@
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: $layout-breakpoint-small) {
   .contact-section {
     margin: 0 2rem 0 2rem;
+  }
+}
+
+@media screen and (max-width: $layout-breakpoint-medium) {
+  .contact-section {
+    margin: 0 5rem 10rem 5rem;
+  }
+}
+
+@media screen and (max-width: $layout-breakpoint-large) {
+  .contact-section {
+    margin: 0 7.5rem 10rem 7.5rem;
   }
 }
 
