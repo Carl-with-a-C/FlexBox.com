@@ -57,8 +57,8 @@ export const About = () => {
       </div>
       <div className="about-section--header-btm-container">
         <motion.h1
-          initial={{ y: -75 }}
-          whileInView={{ y: 0 }}
+          initial={{ opacity: 0, y: -75 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{
             ease: "backOut",
             duration: 0.8,
