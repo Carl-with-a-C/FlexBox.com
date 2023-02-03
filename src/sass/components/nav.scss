@@ -90,12 +90,12 @@
 
 .menu-dropdown-item h1 {
   opacity: 0.000001;
-  transform: translateY(5rem);
+  transform: translateY(4rem);
   transition: all 0.3s ease-in;
 }
 
 .menu-dropdown-item-open h1 {
   opacity: 1;
   transform: translateY(0);
-  transition: all 3s ease-in;
+  transition: all 1.8s ease-in;
 }

@@ -25,6 +25,12 @@
   }
 }
 
+@media screen and (max-width: 369px) {
+  :root {
+    --fs-lrg: 8rem;
+  }
+}
+
 html {
   font-size: 5px;
   letter-spacing: -2.5px;

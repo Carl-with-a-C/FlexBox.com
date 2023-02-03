@@ -11,7 +11,8 @@ export const ProcessBlock = ({ header, imgUrl, blurb }) => {
       opacity: 1,
       x: 0,
       transition: {
-        delay: 0.05,
+        ease: "easeIn",
+        delay: 0.5,
         staggerChildren: 0.4,
       },
     },
@@ -23,8 +24,8 @@ export const ProcessBlock = ({ header, imgUrl, blurb }) => {
       opacity: 1,
       y: 0,
       transition: {
-        ease: "backIn",
-        duration: 0.5,
+        ease: "backOut",
+        duration: 0.8,
       },
     },
   };
