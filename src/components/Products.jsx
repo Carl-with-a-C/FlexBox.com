@@ -42,9 +42,8 @@ export const Products = () => {
           Our Process
         </motion.h3>
         <motion.span
-          //NEED TO ADD MEDIA QUERY FOR LINE LENGTH ABOVE 490!!!!!
           initial={{ width: "0%" }}
-          whileInView={{ width: "50%" }}
+          whileInView={{ width: "100%" }}
           transition={{
             ease: "backOut",
             duration: 0.4,
