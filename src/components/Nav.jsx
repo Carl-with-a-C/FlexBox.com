@@ -9,8 +9,8 @@ export const Nav = () => {
 
   const handleMenuClick = () => {
     setMenuClicked(!menuClicked);
+    console.log(menuClicked, "clickled");
   };
-  console.log(menuClicked);
 
   useEffect(() => {}, [menuClicked]);
 
@@ -54,9 +54,8 @@ export const Nav = () => {
       <motion.div
         className="hamburger-menu"
         id={menuClicked ? "hamburger-menu-open" : null}
-        onClick={handleMenuClick}
       >
-        <span className="menu-icon"></span>
+        <span onClick={handleMenuClick} className="menu-icon"></span>
       </motion.div>
       <motion.div
         className="menu-dropdown-container"
