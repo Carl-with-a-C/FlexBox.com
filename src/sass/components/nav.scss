@@ -47,6 +47,11 @@
   align-items: flex-start;
 }
 
+.nav-links p {
+  font-family: "Poppins";
+  letter-spacing: -1px;
+}
+
 .hamburger-menu {
   display: flex;
   justify-content: center;
@@ -102,16 +107,23 @@
   min-width: 100vw;
   padding: 2rem;
   z-index: 100;
+  display: hidden;
   background: $white;
   color: $background;
   opacity: 0.000001;
   transition: all 0.8s ease-in-out;
+  h1 {
+    height: 0;
+  }
 }
 
 #menu-dropdown-container-open {
   height: calc(100vh - 15rem);
   opacity: 1;
   transition: all 0.8s ease-in-out;
+  h1 {
+    height: 100%;
+  }
 }
 
 .menu-dropdown-content {

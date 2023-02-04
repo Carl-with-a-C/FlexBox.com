@@ -9,7 +9,7 @@
 
   //font-size
   --fs-xl: 30rem;
-  --fs-lrg: 20rem;
+  --fs-lrg: 18rem;
   --fs-med: 15rem;
   --fs-sml: 7rem;
   --fs-p: 3rem;
@@ -17,7 +17,9 @@
 
 @media screen and (max-width: $layout-breakpoint-medium) {
   :root {
-    --fs-xl: 20rem;
+    --fs-xl: 18rem;
+    --fs-lrg: 12rem;
+    --fs-med: 9rem;
     --fs-sml: 6rem;
   }
 }
@@ -25,7 +27,7 @@
 @media screen and (max-width: $layout-breakpoint-small) {
   :root {
     --fs-xl: 14rem;
-    --fs-lrg: 10rem;
+    --fs-lrg: 8.5rem;
     --fs-med: 7rem;
     --fs-sml: 5rem;
     --fs-p: 2.5rem;
@@ -34,7 +36,15 @@
 
 @media screen and (max-width: $layout-breakpoint-xsmall) {
   :root {
-    --fs-lrg: 8rem;
+    --fs-xl: 12rem;
+    --fs-lrg: 7rem;
+  }
+}
+
+@media screen and (max-width: $layout-breakpoint-xxsmall) {
+  :root {
+    --fs-xl: 10rem;
+    //need to fix for smallest screens
   }
 }
 
