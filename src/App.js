@@ -1,7 +1,7 @@
 import "./sass/main.scss";
 
 import { motion, LayoutGroup, AnimatePresence } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 //components
 import { Loader } from "./components/Loader";
@@ -29,10 +29,18 @@ function App() {
         ) : (
           <motion.div className="main" key="main">
             <Nav />
-            <Landing />
-            <About />
-            <Products />
-            <Contact />
+            <section id="landing">
+              <Landing />
+            </section>
+            <section id="about">
+              <About />
+            </section>
+            <section id="product">
+              <Products />
+            </section>
+            <section id="contact">
+              <Contact />
+            </section>
           </motion.div>
         )}
       </AnimatePresence>
