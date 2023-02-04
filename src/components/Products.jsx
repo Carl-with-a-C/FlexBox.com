@@ -29,7 +29,7 @@ export const Products = () => {
     <motion.section ref={headerRef} className="products-section" id="#product">
       <motion.div className="products-section-header-container">
         <motion.h3
-          initial={{ opacity: 0, y: -60, rotateY: 60 }}
+          initial={{ opacity: 0, y: -35, rotateY: 60 }}
           whileInView={{ opacity: 1, y: 0, rotateY: 0 }}
           transition={{
             ease: "easeOut",
