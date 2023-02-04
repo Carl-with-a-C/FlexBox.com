@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import { motion } from "framer-motion";
+
+import flexboxLogo from "../../src/flexboxLogo.svg";
 
 export const Nav = () => {
   const [menuClicked, setMenuClicked] = useState(false);
@@ -8,7 +10,7 @@ export const Nav = () => {
   const handleMenuClick = () => {
     setMenuClicked(!menuClicked);
   };
-  console.log("menu-clicked", menuClicked);
+  console.log(menuClicked);
 
   useEffect(() => {}, [menuClicked]);
 
@@ -25,25 +27,27 @@ export const Nav = () => {
     >
       <div className="nav-logo-container">
         <div className="logo">
-          <a>flexbox</a>
+          <Link activeClass="active" smooth spy to="landing">
+            <img src={flexboxLogo} alt="flexbox logo" className="nav-logo" />
+          </Link>
         </div>
       </div>
       <motion.div className="nav-link-container">
         <ul className="nav-links">
           <li>
-            <a>
+            <Link activeClass="active" smooth spy to="about">
               <p>about</p>
-            </a>
+            </Link>
           </li>
           <li>
-            <a>
+            <Link activeClass="active" smooth spy to="product">
               <p>product</p>
-            </a>
+            </Link>
           </li>
           <li>
-            <a>
+            <Link activeClass="active" smooth spy to="contact">
               <p>contact</p>
-            </a>
+            </Link>
           </li>
         </ul>
       </motion.div>
@@ -59,30 +63,36 @@ export const Nav = () => {
         id={menuClicked ? "menu-dropdown-container-open" : null}
       >
         <motion.ul className="menu-dropdown-content">
-          <li
-            className={
-              menuClicked ? "menu-dropdown-item-open" : "menu-dropdown-item"
-            }
-            onClick={handleMenuClick}
-          >
-            <h1>About</h1>
-          </li>
-          <li
-            className={
-              menuClicked ? "menu-dropdown-item-open" : "menu-dropdown-item"
-            }
-            onClick={handleMenuClick}
-          >
-            <h1>Product</h1>
-          </li>
-          <li
-            className={
-              menuClicked ? "menu-dropdown-item-open" : "menu-dropdown-item"
-            }
-            onClick={handleMenuClick}
-          >
-            <h1>Contact</h1>
-          </li>
+          <Link activeClass="active" smooth spy to="about">
+            <li
+              className={
+                menuClicked ? "menu-dropdown-item-open" : "menu-dropdown-item"
+              }
+              onClick={handleMenuClick}
+            >
+              <h1>About</h1>
+            </li>
+          </Link>
+          <Link activeClass="active" smooth spy to="product">
+            <li
+              className={
+                menuClicked ? "menu-dropdown-item-open" : "menu-dropdown-item"
+              }
+              onClick={handleMenuClick}
+            >
+              <h1>Product</h1>
+            </li>
+          </Link>
+          <Link activeClass="active" smooth spy to="contact">
+            <li
+              className={
+                menuClicked ? "menu-dropdown-item-open" : "menu-dropdown-item"
+              }
+              onClick={handleMenuClick}
+            >
+              <h1>Contact</h1>
+            </li>
+          </Link>
         </motion.ul>
       </motion.div>
     </motion.div>
