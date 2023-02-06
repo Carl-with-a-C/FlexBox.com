@@ -6,7 +6,7 @@ export const Contact = () => {
       <div className="contact-section--header-container">
         <motion.h2
           className="contact-section--header"
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{
             opacity: 1,
             y: 0,

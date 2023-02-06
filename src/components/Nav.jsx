@@ -12,6 +12,12 @@ export const Nav = () => {
     console.log(menuClicked, "clickled");
   };
 
+  const scrollOffsetAbout =
+    window.innerWidth > 1150 ? window.innerWidth + 100 : window.innerWidth + 50;
+  const scrollOffsetProduct =
+    window.innerWidth > 479 ? -window.innerWidth / 5 : -window.innerWidth / 2;
+  const scrollOffsetContact = -window.innerWidth / 5;
+
   useEffect(() => {}, [menuClicked]);
 
   return (
@@ -35,17 +41,35 @@ export const Nav = () => {
       <motion.div className="nav-link-container">
         <ul className="nav-links">
           <li>
-            <Link activeClass="active" smooth spy to="about">
+            <Link
+              activeClass="active"
+              smooth
+              spy
+              to="about"
+              offset={scrollOffsetAbout}
+            >
               <p>about</p>
             </Link>
           </li>
           <li>
-            <Link activeClass="active" smooth spy to="product">
+            <Link
+              activeClass="active"
+              smooth
+              spy
+              to="product"
+              offset={scrollOffsetProduct}
+            >
               <p>product</p>
             </Link>
           </li>
           <li>
-            <Link activeClass="active" smooth spy to="contact">
+            <Link
+              activeClass="active"
+              smooth
+              spy
+              to="contact"
+              offset={scrollOffsetContact}
+            >
               <p>contact</p>
             </Link>
           </li>
@@ -62,7 +86,13 @@ export const Nav = () => {
         id={menuClicked ? "menu-dropdown-container-open" : null}
       >
         <motion.ul className="menu-dropdown-content">
-          <Link activeClass="active" smooth spy to="about">
+          <Link
+            activeClass="active"
+            smooth
+            spy
+            to="about"
+            offset={scrollOffsetAbout}
+          >
             <li
               className={
                 menuClicked ? "menu-dropdown-item-open" : "menu-dropdown-item"
@@ -72,7 +102,13 @@ export const Nav = () => {
               <h1>About</h1>
             </li>
           </Link>
-          <Link activeClass="active" smooth spy to="product">
+          <Link
+            activeClass="active"
+            smooth
+            spy
+            to="product"
+            offset={scrollOffsetProduct}
+          >
             <li
               className={
                 menuClicked ? "menu-dropdown-item-open" : "menu-dropdown-item"
@@ -82,7 +118,14 @@ export const Nav = () => {
               <h1>Product</h1>
             </li>
           </Link>
-          <Link activeClass="active" smooth spy to="contact">
+
+          <Link
+            activeClass="active"
+            smooth
+            spy
+            to="contact"
+            offset={scrollOffsetContact}
+          >
             <li
               className={
                 menuClicked ? "menu-dropdown-item-open" : "menu-dropdown-item"
