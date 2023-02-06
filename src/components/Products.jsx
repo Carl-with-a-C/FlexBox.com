@@ -46,7 +46,7 @@ export const Products = () => {
           whileInView={{ width: "100%" }}
           transition={{
             ease: "backOut",
-            duration: 0.4,
+            duration: 0.8,
             delay: 1.2,
           }}
           viewport={{ once: true }}
@@ -60,7 +60,7 @@ export const Products = () => {
           whileInView="visible"
           transition={{
             ease: "backOut",
-            duration: 0.4,
+            duration: 0.6,
             delay: 1,
           }}
           viewport={{ once: true }}

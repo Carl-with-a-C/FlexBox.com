@@ -66,7 +66,7 @@ export const ProcessBlock = ({ header, imgUrl, blurb }) => {
       onClick={handleClick}
     >
       <motion.h2
-        initial={isMounted ? false : { opacity: 0, y: 160, rotate: -30 }}
+        initial={isMounted ? false : { opacity: 0, y: 130, rotate: -30 }}
         whileInView={{ opacity: 1, y: 0, rotate: 0 }}
         transition={{
           ease: "easeOut",
