@@ -80,8 +80,8 @@ export const About = () => {
         className="about-section--subheader-container"
       >
         <h3 className="about-section--subheader">
-          An innovative, design company, creating and building customised
-          kitchen units
+          A British Design & Engineering Company Crafting Custom Portable Units
+          with Precision, Passion and Innovation
         </h3>
       </motion.div>
       <motion.div
@@ -94,9 +94,14 @@ export const About = () => {
         className="about-section--content-container"
       >
         <h4 className="about-section--pre-content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Id aliquet
-          lectus proin nibh nisl condimentum id venenatis a
+          We specialize in providing customized design and engineering services
+          for your portable commercial and personal needs.
+        </h4>
+
+        <h4 className="about-section--pre-content">
+          From portable hospitality units and DJ booths to retail pop-up units,
+          we construct high-quality solutions tailored to your exact
+          specifications.
         </h4>
       </motion.div>
       <div className="about-section--img-container">
@@ -136,9 +141,8 @@ export const About = () => {
         }}
       >
         <h4 className="about-section--post-content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Id aliquet
-          lectus proin nibh nisl condimentum id venenatis a
+          Bring your ideas to life with our unique engineering solutions. Stand
+          out with a one-of-a-kind unit built to your precise requirements.
         </h4>
       </motion.div>
     </motion.section>

@@ -34,7 +34,11 @@ export const Nav = () => {
       <div className="nav-logo-container">
         <div className="logo">
           <Link activeClass="active" smooth spy to="landing">
-            <img src={flexboxLogo} alt="flexbox logo" className="nav-logo" />
+            <img
+              src={process.env.PUBLIC_URL + `/images/logoBack.png`}
+              alt="flexbox logo"
+              className="nav-logo"
+            />
           </Link>
         </div>
       </div>
@@ -99,7 +103,7 @@ export const Nav = () => {
               }
               onClick={handleMenuClick}
             >
-              <h1>About</h1>
+              <h1>ABOUT</h1>
             </li>
           </Link>
           <Link
@@ -115,7 +119,7 @@ export const Nav = () => {
               }
               onClick={handleMenuClick}
             >
-              <h1>Product</h1>
+              <h1>PRODUCT</h1>
             </li>
           </Link>
 
@@ -132,7 +136,7 @@ export const Nav = () => {
               }
               onClick={handleMenuClick}
             >
-              <h1>Contact</h1>
+              <h1>CONTACT</h1>
             </li>
           </Link>
         </motion.ul>

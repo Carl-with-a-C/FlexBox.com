@@ -6,20 +6,20 @@ export const blocks = {
     title: "build-quality",
     imgUrl: "/images/welding.jpg",
     blurb:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id aliquet lectus proin nibh nisl condimentum id venenatis a. Elit at imperdiet dui accumsan sit amet nulla. Nibh venenatis cras sed felis eget velit aliquet. Tristique nulla aliquet enim tortor. Rhoncus est pellentesque elit ",
+      "Our units are handcrafted in Britain with locally sourced resources and a commitment to quality. We use only the finest materials and draw on years of experience to deliver exceptional results.",
   },
   features: {
     header: "FEATURES",
     title: "features",
     imgUrl: "/images/speaker.jpg",
     blurb:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id aliquet lectus proin nibh nisl condimentum id venenatis a. Elit at imperdiet dui accumsan sit amet nulla. Nibh venenatis cras sed felis eget velit aliquet. Tristique nulla aliquet enim tortor. Rhoncus est pellentesque elit ",
+      "From sourcing electronics and materials to incorporating specific features, we can customize your unit to meet your exact needs. Whether it's a state-of-the-art entertainment system or a fully equipped bar, we'll bring your vision to life.",
   },
   security: {
     header: "SECURITY",
     title: "security",
     imgUrl: "/images/lock.jpg",
     blurb:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id aliquet lectus proin nibh nisl condimentum id venenatis a. Elit at imperdiet dui accumsan sit amet nulla. Nibh venenatis cras sed felis eget velit aliquet. Tristique nulla aliquet enim tortor. Rhoncus est pellentesque elit ",
+      "At FLEXBOX, your peace of mind is our top priority. All our units are equipped with advanced locking and closing systems for added security and protection.",
   },
 };
