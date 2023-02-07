@@ -10,6 +10,7 @@ import { Landing } from "./components/Landing";
 import { About } from "./components/About";
 import { Products } from "./components/Products";
 import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 
 function App() {
   const [loading, setLoading] = useState(true);

@@ -34,7 +34,11 @@ export const Nav = () => {
       <div className="nav-logo-container">
         <div className="logo">
           <Link activeClass="active" smooth spy to="landing">
-            <img src={flexboxLogo} alt="flexbox logo" className="nav-logo" />
+            <img
+              src={process.env.PUBLIC_URL + `/images/logoBack.png`}
+              alt="flexbox logo"
+              className="nav-logo"
+            />
           </Link>
         </div>
       </div>

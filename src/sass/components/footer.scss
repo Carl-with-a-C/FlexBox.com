@@ -1,0 +1,32 @@
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: space-around;
+  gap: 3rem;
+  background-color: $white;
+  color: $background;
+  margin: 15rem;
+}
+
+@media screen and (max-width: $layout-breakpoint-large) {
+  .footer-section {
+    margin: 7.5rem;
+  }
+}
+
+@media screen and (max-width: $layout-breakpoint-medium) {
+  .footer-section {
+    margin: 5rem;
+  }
+}
+
+@media screen and (max-width: $layout-breakpoint-small) {
+  .footer-section {
+    margin: 2rem;
+  }
+}
+
+.footer-logo {
+  width: calc(100% - 10vw);
+}

@@ -62,7 +62,16 @@ export const ProcessBlock = ({ header, imgUrl, blurb }) => {
         className={"process-block--container-open"}
         onClick={handleClick}
       >
-        <motion.h2 className={"process-block--header"}>{`${header}`}</motion.h2>
+        <motion.h2
+          className={"process-block--header"}
+          initial={{ opacity: 0, y: 30, rotateY: -60 }}
+          whileInView={{ opacity: 1, y: 0, rotateY: 0 }}
+          transition={{
+            ease: "easeOut",
+            duration: 0.6,
+            delay: 1,
+          }}
+        >{`${header}`}</motion.h2>
         <motion.p
           variants={blockElement}
           initial="hidden"

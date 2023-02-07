@@ -37,6 +37,7 @@ export const Products = () => {
             delay: 1,
           }}
           viewport={{ once: true }}
+          key="1a"
           className="products-section-header"
         >
           Our Process
@@ -67,6 +68,7 @@ export const Products = () => {
           className="block-divider"
         ></motion.span>
         <ProcessBlock
+          key={5}
           header={buildQuality.header}
           blurb={buildQuality.blurb}
           imgUrl={buildQuality.imgUrl}
@@ -85,6 +87,7 @@ export const Products = () => {
           className="block-divider"
         ></motion.span>
         <ProcessBlock
+          key={6}
           header={security.header}
           blurb={security.blurb}
           imgUrl={security.imgUrl}
@@ -103,6 +106,7 @@ export const Products = () => {
           className="block-divider"
         ></motion.span>
         <ProcessBlock
+          key={7}
           header={features.header}
           blurb={features.blurb}
           imgUrl={features.imgUrl}

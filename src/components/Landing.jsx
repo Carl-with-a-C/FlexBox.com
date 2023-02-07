@@ -16,12 +16,9 @@ export const Landing = () => {
     restDelta: 0.001,
   });
 
-  // Landing banner lines
-
-  const line1 = "WE BUILD";
-  const line2 = "BESPOKE";
-  const line3 = "INNOVATIVE";
-  const line4 = "DESIGN SOLUTIONS";
+  const line1 = "BESPOKE";
+  const line2 = "INNOVATIVE";
+  const line3 = "DESIGN";
 
   const sentence = {
     hidden: { opacity: 1 },
@@ -77,13 +74,13 @@ export const Landing = () => {
         })}
         <br />
 
-        {line4.split("").map((char, index) => {
+        {/* {line4.split("").map((char, index) => {
           return (
             <motion.span key={`${char} ${index}`} variants={letter}>
               {char}
             </motion.span>
           );
-        })}
+        })} */}
       </motion.h1>
 
       <motion.div
@@ -97,7 +94,7 @@ export const Landing = () => {
         className="landing-message-container"
       >
         <h4 className="landing-message">
-          Custom portable units, built to specification.
+          Designing and Building Bespoke Solutions for Your Unique Needs
         </h4>
       </motion.div>
       <motion.div
