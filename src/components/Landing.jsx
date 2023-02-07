@@ -19,9 +19,9 @@ export const Landing = () => {
   // Landing banner lines
 
   const line1 = "WE BUILD";
-  const line2 = "INCREDIBLE";
-  const line3 = "COMPACT";
-  const line4 = "KITCHEN SOLUTIONS";
+  const line2 = "BESPOKE";
+  const line3 = "INNOVATIVE";
+  const line4 = "DESIGN SOLUTIONS";
 
   const sentence = {
     hidden: { opacity: 1 },
@@ -97,8 +97,7 @@ export const Landing = () => {
         className="landing-message-container"
       >
         <h4 className="landing-message">
-          An innovative, design company, creating and building customised
-          kitchen units
+          Custom portable units, built to specification.
         </h4>
       </motion.div>
       <motion.div

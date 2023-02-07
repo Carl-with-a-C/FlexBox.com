@@ -80,8 +80,8 @@ export const About = () => {
         className="about-section--subheader-container"
       >
         <h3 className="about-section--subheader">
-          An innovative, design company, creating and building customised
-          kitchen units
+          An innovative British company, creating and building customised
+          compact units
         </h3>
       </motion.div>
       <motion.div
@@ -94,9 +94,13 @@ export const About = () => {
         className="about-section--content-container"
       >
         <h4 className="about-section--pre-content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Id aliquet
-          lectus proin nibh nisl condimentum id venenatis a
+          We offer customised design and engineering solutions for your portable
+          commercial and personal needs
+        </h4>
+
+        <h4 className="about-section--pre-content">
+          Portable hospitatlity units, dj booths and retail pop-up units
+          constructed to the highest quality customer specification
         </h4>
       </motion.div>
       <div className="about-section--img-container">

@@ -99,7 +99,7 @@ export const Nav = () => {
               }
               onClick={handleMenuClick}
             >
-              <h1>About</h1>
+              <h1>ABOUT</h1>
             </li>
           </Link>
           <Link
@@ -115,7 +115,7 @@ export const Nav = () => {
               }
               onClick={handleMenuClick}
             >
-              <h1>Product</h1>
+              <h1>PRODUCT</h1>
             </li>
           </Link>
 
@@ -132,7 +132,7 @@ export const Nav = () => {
               }
               onClick={handleMenuClick}
             >
-              <h1>Contact</h1>
+              <h1>CONTACT</h1>
             </li>
           </Link>
         </motion.ul>
