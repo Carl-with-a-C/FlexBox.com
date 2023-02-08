@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  cursor: pointer;
 }
 
 .process-block--container-open {
@@ -27,7 +28,7 @@
   width: 100%;
 }
 
-.process-block--container-closed:hover {
+.process-block--container:hover {
   background-color: $white;
   color: $black;
 }

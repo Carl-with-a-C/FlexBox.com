@@ -31,6 +31,7 @@ export const Contact = () => {
       <div className="contact-section--info-container">
         <p>General Enquiries</p>
         <a href="mailto:info@flexbox.com">info@flexbox.com</a>
+        <a href="tel: 01617060917">Call Us</a>
       </div>
     </motion.div>
   );

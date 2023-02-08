@@ -2,8 +2,6 @@ import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 
-import flexboxLogo from "../../src/flexboxLogo.svg";
-
 export const Nav = () => {
   const [menuClicked, setMenuClicked] = useState(false);
 
@@ -35,7 +33,7 @@ export const Nav = () => {
         <div className="logo">
           <Link activeClass="active" smooth spy to="landing">
             <img
-              src={process.env.PUBLIC_URL + `/images/logoBack.png`}
+              src={process.env.PUBLIC_URL + `/images/logoWht.png`}
               alt="flexbox logo"
               className="nav-logo"
             />
@@ -78,6 +76,16 @@ export const Nav = () => {
             </Link>
           </li>
         </ul>
+      </motion.div>
+      <motion.div className="nav-call-container">
+        <p className="nav-phone-no">0161 706 0917</p>
+        <a href="tel: 01617060917">
+          <img
+            className="nav-phone-icon"
+            src={process.env.PUBLIC_URL + `/images/phone.svg`}
+            alt="phone icon"
+          />
+        </a>
       </motion.div>
       <motion.div
         className="hamburger-menu"

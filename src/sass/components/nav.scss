@@ -25,6 +25,11 @@
   .nav-links {
     visibility: hidden;
   }
+  .nav-link-container,
+  .nav-phone-icon,
+  .nav-phone-no {
+    display: none;
+  }
 }
 
 .nav-link-container {
@@ -33,6 +38,7 @@
 
 .nav-logo {
   width: 25rem;
+  cursor: pointer;
 }
 
 .nav-links {
@@ -44,6 +50,36 @@
 .nav-links p {
   font-family: "Poppins";
   letter-spacing: -1px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-links p:hover {
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-call-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-phone-icon {
+  width: 8rem;
+  border: solid 2px $white;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.nav-phone-no {
+  color: $white;
+  text-decoration: none;
+  font-family: "Poppins";
+  letter-spacing: -1px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
 }
 
 .hamburger-menu {
@@ -61,7 +97,7 @@
 
 @media screen and (min-width: 740px) {
   .hamburger-menu {
-    visibility: hidden;
+    display: none;
   }
 }
 

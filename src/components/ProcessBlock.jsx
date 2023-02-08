@@ -59,7 +59,7 @@ export const ProcessBlock = ({ header, imgUrl, blurb }) => {
         variants={block}
         initial="initial"
         animate={isOpen ? "visible" : "initial"}
-        className={"process-block--container-open"}
+        className="process-block--container-open"
         onClick={handleClick}
       >
         <motion.h2
@@ -71,6 +71,7 @@ export const ProcessBlock = ({ header, imgUrl, blurb }) => {
             duration: 0.6,
             delay: 1,
           }}
+          viewport={{ once: true }}
         >{`${header}`}</motion.h2>
         <motion.p
           variants={blockElement}
