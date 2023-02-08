@@ -28,11 +28,23 @@ export const Contact = () => {
           alt="candle-lit meal"
         />
       </div>
-      <div className="contact-section--info-container">
+      <motion.div className="contact-section--info-container">
         <p>General Enquiries</p>
-        <a href="mailto:info@flexbox.com">info@flexbox.com</a>
-        <a href="tel: 01617060917">Call Us</a>
-      </div>
+        <motion.a
+          whileHover={{ scale: 1.1, color: "#F1C05E" }}
+          whileTap={{ scale: 0.9 }}
+          href="mailto:info@flexbox.com"
+        >
+          info@flexbox.com
+        </motion.a>
+        <motion.a
+          whileHover={{ scale: 1.1, color: "#F1C05E" }}
+          whileTap={{ scale: 0.9 }}
+          href="tel: 01617060917"
+        >
+          Call Us
+        </motion.a>
+      </motion.div>
     </motion.div>
   );
 };

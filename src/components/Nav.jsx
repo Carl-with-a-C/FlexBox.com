@@ -32,7 +32,10 @@ export const Nav = () => {
       <div className="nav-logo-container">
         <div className="logo">
           <Link activeClass="active" smooth spy to="landing">
-            <img
+            <motion.img
+              whileHover={{ scale: 1.2 }}
+              transition={{ type: "spring", stiffness: 400, damping: 50 }}
+              whileTap={{ scale: 0.9 }}
               src={process.env.PUBLIC_URL + `/images/logoWht.png`}
               alt="flexbox logo"
               className="nav-logo"
@@ -80,7 +83,9 @@ export const Nav = () => {
       <motion.div className="nav-call-container">
         <p className="nav-phone-no">0161 706 0917</p>
         <a href="tel: 01617060917">
-          <img
+          <motion.img
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 50 }}
             className="nav-phone-icon"
             src={process.env.PUBLIC_URL + `/images/phone.svg`}
             alt="phone icon"
