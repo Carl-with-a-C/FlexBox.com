@@ -42,26 +42,28 @@ export const Contact = () => {
           whileTap={{ scale: 0.9 }}
           href="tel: 01617060917"
         >
-          Call Us
+          0161 706 0917
         </motion.a>
       </motion.div>
       <div className="contacts-socials-container">
         <ul className="contacts-socials-list">
           <li>
-            <a>
-              <img src={process.env.PUBLIC_URL + `/images/insta-light.svg`} />
+            <a
+              href={"https://www.instagram.com/the.flexbox/?hl=af"}
+              target="_blank"
+            >
+              <img
+                src={process.env.PUBLIC_URL + `/images/insta-light.svg`}
+                alt="instagram logo"
+              />
             </a>
           </li>
           <li>
             <a>
               <img
                 src={process.env.PUBLIC_URL + `/images/facebook-light.svg`}
+                alt="facebook logo"
               />
-            </a>
-          </li>
-          <li>
-            <a>
-              <img src={process.env.PUBLIC_URL + `/images/twitter-light.svg`} />
             </a>
           </li>
         </ul>

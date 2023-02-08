@@ -16,6 +16,8 @@ export const About = () => {
     restDelta: 0.005,
   });
 
+  const imageReveal = window.innerWidth > 479 ? "some" : "all";
+
   return (
     <motion.section ref={lineScrollRef} className="about-section" id="about">
       <motion.div className="about-section--hero-img-container">
@@ -27,13 +29,13 @@ export const About = () => {
         <motion.span
           initial={{
             opacity: 1,
-            height: "690px",
+            height: "100%",
           }}
           whileInView={{
             opacity: 1,
             height: "0px",
           }}
-          viewport={{ once: true, amount: "all" }}
+          viewport={{ once: true, amount: imageReveal }}
           transition={{
             type: "linear",
             ease: "circOut",
@@ -117,13 +119,13 @@ export const About = () => {
         <motion.span
           initial={{
             opacity: 1,
-            height: "612px",
+            height: "100%",
           }}
           whileInView={{
             opacity: 1,
             height: "0px",
           }}
-          viewport={{ once: true, amount: "all" }}
+          viewport={{ once: true, amount: imageReveal }}
           transition={{
             type: "linear",
             ease: "circOut",

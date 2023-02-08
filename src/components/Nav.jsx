@@ -162,7 +162,10 @@ export const Nav = () => {
             <div className="socials-container">
               <ul>
                 <li>
-                  <a>
+                  <a
+                    href={"https://www.instagram.com/the.flexbox/?hl=af"}
+                    target="_blank"
+                  >
                     <img
                       src={process.env.PUBLIC_URL + `/images/insta.svg`}
                       alt="instagram logo"
@@ -174,14 +177,6 @@ export const Nav = () => {
                     <img
                       src={process.env.PUBLIC_URL + `/images/facebook.svg`}
                       alt="facebook logo"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a>
-                    <img
-                      src={process.env.PUBLIC_URL + `/images/twitter.svg`}
-                      alt="twitter logo"
                     />
                   </a>
                 </li>
