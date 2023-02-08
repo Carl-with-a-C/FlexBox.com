@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 
 export const Nav = () => {
   const [menuClicked, setMenuClicked] = useState(false);
 
+  const { scrollYProgress } = useScroll();
+
   const handleMenuClick = () => {
     setMenuClicked(!menuClicked);
-    console.log(menuClicked, "clickled");
   };
 
   const scrollOffsetAbout =
@@ -154,6 +155,10 @@ export const Nav = () => {
           </Link>
         </motion.ul>
       </motion.div>
+      <motion.div
+        className="progress-bar"
+        style={{ scaleX: scrollYProgress }}
+      />
     </motion.div>
   );
 };

@@ -37,7 +37,7 @@
 }
 
 .nav-logo {
-  width: 25rem;
+  width: 18rem;
   cursor: pointer;
 }
 
@@ -69,8 +69,8 @@
 }
 
 .nav-phone-icon {
-  width: 8rem;
-  border: solid 2px $white;
+  width: 5.5rem;
+  border: solid 1px $white;
   border-radius: 50%;
   padding: 1rem;
 }
@@ -183,4 +183,14 @@
   opacity: 1;
   transform: translateY(0);
   transition: all 1.8s ease-in;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background: $white;
+  transform-origin: 0%;
 }
