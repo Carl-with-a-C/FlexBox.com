@@ -9,6 +9,7 @@ export const Nav = () => {
 
   const handleMenuClick = () => {
     setMenuClicked(!menuClicked);
+    console.log("clicked");
   };
 
   const scrollOffsetAbout =
@@ -153,6 +154,33 @@ export const Nav = () => {
               <h1>CONTACT</h1>
             </li>
           </Link>
+          <li
+            className={
+              menuClicked ? "menu-dropdown-item-open" : "menu-dropdown-item"
+            }
+          >
+            <div className="socials-container">
+              <ul>
+                <li>
+                  <a>
+                    <img src={process.env.PUBLIC_URL + `/images/insta.svg`} />
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <img
+                      src={process.env.PUBLIC_URL + `/images/facebook.svg`}
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <img src={process.env.PUBLIC_URL + `/images/twitter.svg`} />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
         </motion.ul>
       </motion.div>
       <motion.div
