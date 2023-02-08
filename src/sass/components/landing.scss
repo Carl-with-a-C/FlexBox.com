@@ -9,14 +9,14 @@
   gap: 15rem;
   padding: 40rem 0 10rem 0;
   background-color: $background;
-  background: url("../../../public/images/landing-bg-dark.jpg");
+  background: url("../../../public/images/landing-bg-dark.webp");
   background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.1),
       rgba(30, 30, 30, 1),
       rgba(30, 30, 30, 1)
     ),
-    url("../../../public/images/landing-bg-dark.jpg");
+    url("../../../public/images/landing-bg-dark.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;

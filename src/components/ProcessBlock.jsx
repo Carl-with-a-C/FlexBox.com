@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
-export const ProcessBlock = ({ header, imgUrl, blurb }) => {
+export const ProcessBlock = ({ header, imgUrl, blurb, alt }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
   const [blockSize, setBlockSize] = useState(window.innerWidth);
@@ -87,6 +87,7 @@ export const ProcessBlock = ({ header, imgUrl, blurb }) => {
           key="b"
           className={`process-block--img`}
           src={process.env.PUBLIC_URL + `${imgUrl}`}
+          alt={alt}
         />
       </motion.div>
     </AnimatePresence>
