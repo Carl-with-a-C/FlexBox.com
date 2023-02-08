@@ -163,19 +163,26 @@ export const Nav = () => {
               <ul>
                 <li>
                   <a>
-                    <img src={process.env.PUBLIC_URL + `/images/insta.svg`} />
+                    <img
+                      src={process.env.PUBLIC_URL + `/images/insta.svg`}
+                      alt="instagram logo"
+                    />
                   </a>
                 </li>
                 <li>
                   <a>
                     <img
                       src={process.env.PUBLIC_URL + `/images/facebook.svg`}
+                      alt="facebook logo"
                     />
                   </a>
                 </li>
                 <li>
                   <a>
-                    <img src={process.env.PUBLIC_URL + `/images/twitter.svg`} />
+                    <img
+                      src={process.env.PUBLIC_URL + `/images/twitter.svg`}
+                      alt="twitter logo"
+                    />
                   </a>
                 </li>
               </ul>

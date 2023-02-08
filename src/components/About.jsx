@@ -21,7 +21,7 @@ export const About = () => {
       <motion.div className="about-section--hero-img-container">
         <motion.img
           className="about-section--hero-img"
-          src={process.env.PUBLIC_URL + `/images/about-hero1.jpg`}
+          src={process.env.PUBLIC_URL + `/images/about-hero1.webp`}
           alt="an outside kitchen"
         />
         <motion.span
