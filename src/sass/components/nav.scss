@@ -185,9 +185,17 @@
   transition: all 1.8s ease-in;
 }
 
+.socials-container {
+  padding-top: 20rem;
+}
+
+.socials-container img {
+  width: 10rem;
+}
+
 .progress-bar {
   position: fixed;
-  top: 0;
+  top: 15rem;
   left: 0;
   right: 0;
   height: 1rem;

@@ -45,6 +45,27 @@ export const Contact = () => {
           Call Us
         </motion.a>
       </motion.div>
+      <div className="contacts-socials-container">
+        <ul className="contacts-socials-list">
+          <li>
+            <a>
+              <img src={process.env.PUBLIC_URL + `/images/insta-light.svg`} />
+            </a>
+          </li>
+          <li>
+            <a>
+              <img
+                src={process.env.PUBLIC_URL + `/images/facebook-light.svg`}
+              />
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src={process.env.PUBLIC_URL + `/images/twitter-light.svg`} />
+            </a>
+          </li>
+        </ul>
+      </div>
     </motion.div>
   );
 };
