@@ -49,6 +49,7 @@
 
 .nav-links p {
   font-family: "Poppins";
+  font-weight: 400;
   letter-spacing: -1px;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
@@ -57,6 +58,7 @@
 .nav-links p:hover {
   transform: scale(1.1);
   transition: all 0.4s ease-in-out;
+  color: #f1c05e;
 }
 
 .nav-call-container {
