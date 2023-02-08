@@ -8,7 +8,7 @@ export const Landing = () => {
 
   const { scrollYProgress } = useScroll({
     target: lineScrollref,
-    offset: ["end end", "start start"],
+    offset: ["end start", "start start"],
   });
 
   const scaleX = useSpring(scrollYProgress, {
@@ -105,6 +105,7 @@ export const Landing = () => {
           type: "spring",
           stiffness: 400,
           damping: 20,
+          delay: false,
         }}
         whileHover={{ scale: 1.2, backgroundColor: "#F1C05E" }}
         whileTap={{ scale: 0.9 }}

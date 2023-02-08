@@ -8,11 +8,23 @@
   justify-content: space-around;
   gap: 15rem;
   padding: 40rem 0 10rem 0;
+  background-color: $background;
+  background: url("../../../public/images/landing-bg-dark.jpg");
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(30, 30, 30, 1),
+      rgba(30, 30, 30, 1)
+    ),
+    url("../../../public/images/landing-bg-dark.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
 }
 
-@media screen and (max-width: $layout-breakpoint-small) {
+@media screen and (max-width: $layout-breakpoint-large) {
   .landing-section {
-    margin: 0 2rem 0 2rem;
+    margin: 0 7.5rem 10rem 7.5rem;
   }
 }
 
@@ -22,9 +34,9 @@
   }
 }
 
-@media screen and (max-width: $layout-breakpoint-large) {
+@media screen and (max-width: $layout-breakpoint-small) {
   .landing-section {
-    margin: 0 7.5rem 10rem 7.5rem;
+    margin: 0 2rem 0 2rem;
   }
 }
 

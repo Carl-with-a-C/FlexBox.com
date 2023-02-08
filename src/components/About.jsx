@@ -21,13 +21,13 @@ export const About = () => {
       <motion.div className="about-section--hero-img-container">
         <motion.img
           className="about-section--hero-img"
-          src={process.env.PUBLIC_URL + `/images/hero-img.jpg`}
+          src={process.env.PUBLIC_URL + `/images/about-hero1.jpg`}
           alt="an outside kitchen"
         />
         <motion.span
           initial={{
             opacity: 1,
-            height: "501px",
+            height: "612px",
           }}
           whileInView={{
             opacity: 1,
@@ -111,13 +111,13 @@ export const About = () => {
         ></motion.div>
         <img
           className="about-section--garden-img"
-          src={process.env.PUBLIC_URL + `/images/garden-kitchen.jpg`}
+          src={process.env.PUBLIC_URL + `/images/landing-hero.jpg`}
           alt="a beach kitchen"
         />
         <motion.span
           initial={{
             opacity: 1,
-            height: "500px",
+            height: "612px",
           }}
           whileInView={{
             opacity: 1,
