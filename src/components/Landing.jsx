@@ -26,8 +26,8 @@ export const Landing = () => {
     visible: {
       opacity: 1,
       transition: {
-        delay: 0.2,
-        staggerChildren: 0.08,
+        delay: 0.3,
+        staggerChildren: 0.12,
       },
     },
   };
@@ -42,7 +42,7 @@ export const Landing = () => {
 
   const cta = {
     hidden: { opacity: 0, scale: 0.01 },
-    visible: { opacity: 1, scale: 1, transition: { delay: 4.4 } },
+    visible: { opacity: 1, scale: 1, transition: { delay: 3.6, duration: 1 } },
   };
 
   return (
@@ -87,7 +87,7 @@ export const Landing = () => {
         transition={{
           ease: "easeInOut",
           duration: 1.8,
-          delay: 3.2,
+          delay: 2.5,
         }}
         className="landing-message-container"
       >

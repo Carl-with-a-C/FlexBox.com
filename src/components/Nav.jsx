@@ -26,8 +26,8 @@ export const Nav = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{
         ease: "easeInOut",
-        duration: 2,
-        delay: 2,
+        duration: 2.4,
+        delay: 1.75,
       }}
       className="nav-container nav-section"
     >

@@ -27,7 +27,7 @@ export const About = () => {
         <motion.span
           initial={{
             opacity: 1,
-            height: "612px",
+            height: "690px",
           }}
           whileInView={{
             opacity: 1,
