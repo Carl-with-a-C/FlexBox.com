@@ -59,6 +59,7 @@ export const ProcessBlock = ({ header, imgUrl, blurb, alt }) => {
         variants={block}
         initial="initial"
         animate={isOpen ? "visible" : "initial"}
+        whileHover={{ backgroundColor: "#fff", color: "#1e1e1e" }}
         className="process-block--container-open"
         onClick={handleClick}
       >
