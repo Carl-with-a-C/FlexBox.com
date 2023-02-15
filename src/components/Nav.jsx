@@ -163,7 +163,7 @@ export const Nav = () => {
               <ul>
                 <li>
                   <a
-                    href={"https://www.instagram.com/the.flexbox/?hl=af"}
+                    href={"https://www.instagram.com/the.flexbox"}
                     target="_blank"
                   >
                     <img

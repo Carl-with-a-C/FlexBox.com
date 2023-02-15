@@ -33,9 +33,9 @@ export const Contact = () => {
         <motion.a
           whileHover={{ scale: 1.1, color: "#F1C05E" }}
           whileTap={{ scale: 0.9 }}
-          href="mailto:info@flexbox.com"
+          href="mailto:sales@theflexbox.co.uk"
         >
-          info@flexbox.com
+          sales@theflexbox.co.uk
         </motion.a>
         <motion.a
           whileHover={{ scale: 1.1, color: "#F1C05E" }}
@@ -48,10 +48,7 @@ export const Contact = () => {
       <div className="contacts-socials-container">
         <ul className="contacts-socials-list">
           <li>
-            <a
-              href={"https://www.instagram.com/the.flexbox/?hl=af"}
-              target="_blank"
-            >
+            <a href={"https://www.instagram.com/the.flexbox"} target="_blank">
               <img
                 src={process.env.PUBLIC_URL + `/images/insta-light.svg`}
                 alt="instagram logo"
