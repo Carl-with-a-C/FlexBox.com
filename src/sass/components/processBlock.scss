@@ -49,3 +49,19 @@
 .process-block--img {
   width: 100%;
 }
+
+@media screen and (min-width: $layout-breakpoint-medium) {
+  .process-block--content {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .process-block--container p {
+    padding: 0 4rem;
+  }
+  .process-block--img {
+    width: calc(50vw + 10%);
+  }
+}

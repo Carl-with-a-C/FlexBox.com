@@ -38,7 +38,7 @@ export const Nav = () => {
               whileHover={{ scale: 1.2 }}
               transition={{ type: "spring", stiffness: 400, damping: 50 }}
               whileTap={{ scale: 0.9 }}
-              src={process.env.PUBLIC_URL + `/images/logoWht.png`}
+              src={process.env.PUBLIC_URL + `/images/flexLogoLight.png`}
               alt="flexbox logo"
               className="nav-logo"
             />
