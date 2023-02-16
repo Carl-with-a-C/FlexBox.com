@@ -74,22 +74,24 @@ export const ProcessBlock = ({ header, imgUrl, blurb, alt }) => {
           }}
           viewport={{ once: true }}
         >{`${header}`}</motion.h2>
-        <motion.p
-          variants={blockElement}
-          initial="hidden"
-          animate={isOpen ? "visible" : "hidden"}
-          key="a"
-          className={"process-block--blurb"}
-        >{`${blurb}`}</motion.p>
-        <motion.img
-          variants={blockElement}
-          initial="hidden"
-          animate={isOpen ? "visible" : "hidden"}
-          key="b"
-          className={`process-block--img`}
-          src={process.env.PUBLIC_URL + `${imgUrl}`}
-          alt={alt}
-        />
+        <motion.div className="process-block--content">
+          <motion.p
+            variants={blockElement}
+            initial="hidden"
+            animate={isOpen ? "visible" : "hidden"}
+            key="a"
+            className={"process-block--blurb"}
+          >{`${blurb}`}</motion.p>
+          <motion.img
+            variants={blockElement}
+            initial="hidden"
+            animate={isOpen ? "visible" : "hidden"}
+            key="b"
+            className={`process-block--img`}
+            src={process.env.PUBLIC_URL + `${imgUrl}`}
+            alt={alt}
+          />
+        </motion.div>
       </motion.div>
     </AnimatePresence>
   );
