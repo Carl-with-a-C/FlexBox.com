@@ -56,7 +56,10 @@ export const Contact = () => {
             </a>
           </li>
           <li>
-            <a>
+            <a
+              href={"https://www.facebook.com/people/Flexbox/100090273501371/"}
+              target="_blank"
+            >
               <img
                 src={process.env.PUBLIC_URL + `/images/facebook-light.svg`}
                 alt="facebook logo"

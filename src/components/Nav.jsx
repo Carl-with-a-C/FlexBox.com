@@ -173,7 +173,12 @@ export const Nav = () => {
                   </a>
                 </li>
                 <li>
-                  <a>
+                  <a
+                    href={
+                      "https://www.facebook.com/people/Flexbox/100090273501371/"
+                    }
+                    target="_blank"
+                  >
                     <img
                       src={process.env.PUBLIC_URL + `/images/facebook.svg`}
                       alt="facebook logo"
